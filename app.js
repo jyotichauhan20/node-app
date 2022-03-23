@@ -5,8 +5,8 @@ const yargs = require('yargs');
 
 const Notes=require("./notes.js")
 
-// const command=process.argv[2]
-// console.log(process.argv)
+const command=process.argv[2]
+console.log(process.argv)
 yargs.version('1.1.0')
 //It will update yargs version
 
@@ -103,25 +103,23 @@ yargs.parse()
 // }
 
 
-// var msg=getNotes()
-// console.log(msg)
+var msg=getNotes()
+console.log(msg)
 
-// console.log(chalk.green("message!"));
-// const color=chalk.green("success")
-// console.log(color)
 
-// console.log(chalk.red.bold.inverse('Hello world!')); 
 
-// console.log(process.argv[2])
+console.log(chalk.red.bold.inverse('Hello world!')); 
 
-// var fs = require('fs');
-// fs.writeFileSync("data.txt", "babu mere likeeee")
-// fs.appendFileSync("data.txt"," I am appending file")
+console.log(process.argv[2])
 
-// const validator=require("validator")
-// console.log(validator.isEmail("jyotichauhan20@navgurukul.org"))
-// console.log(validator.isBoolean("true","false"))
-// console.log(validator.isURL("https://stackoverflow.com"))
+var fs = require('fs');
+fs.writeFileSync("data.txt", "I am writing file")
+fs.appendFileSync("data.txt"," I am appending file")
+
+const validator=require("validator")
+console.log(validator.isEmail("jyotichauhan20@navgurukul.org"))
+console.log(validator.isBoolean("true","false"))
+console.log(validator.isURL("https://stackoverflow.com"))
 
 
 
